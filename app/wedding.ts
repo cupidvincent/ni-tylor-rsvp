@@ -1,4 +1,6 @@
 const localDate = "2027-01-27";
+const bride = "Niña";
+const groom = "Tylor";
 const startsAt = `${localDate}T08:00:00+08:00`;
 const timeZone = "Asia/Manila";
 const weddingDate = new Date(`${localDate}T00:00:00+08:00`);
@@ -12,7 +14,9 @@ const dateFormat = new Intl.DateTimeFormat("en-US", {
 });
 
 export const wedding = {
-  couple: "Nña & Tylor",
+  bride,
+  groom,
+  couple: `${bride} & ${groom}`,
   date: dateFormat.format(weddingDate),
   startsAt,
   time: new Intl.DateTimeFormat("en-US", {

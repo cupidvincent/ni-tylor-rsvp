@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <header className="site-header" id="top">
-        <a className="monogram" href="#top" aria-label="Nña and Tylor, back to top">
+        <a className="monogram" href="#top" aria-label={`${wedding.bride} and ${wedding.groom}, back to top`}>
           <span>N</span><Icon name="heart" size={14} /><span>T</span>
         </a>
         <a className="nav-rsvp" href="#rsvp">RSVP</a>
@@ -23,7 +23,7 @@ export default function Home() {
         <section className="hero" aria-labelledby="couple">
           <div className="hero-copy">
             <p className="eyebrow"><span /> Together with their families</p>
-            <h1 id="couple">Nña <em>&amp;</em> Tylor</h1>
+            <h1 id="couple">{wedding.bride} <em>&amp;</em> {wedding.groom}</h1>
             <p className="invitation">Please join us as we say “I do.”</p>
             <div className="wedding-details">
               <p className="wedding-detail">
@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <figure className="hero-visual">
             <div className="photo">
-              <Image src="/wedding-flowers.webp" alt="Blush roses and gold wedding rings on ivory linen" fill sizes="(max-width: 760px) 92vw, 470px" preload />
+              <Image src="/wedding-flowers-sage.webp" alt="Ivory wedding flowers tied with a sage green ribbon beside gold rings" fill sizes="(max-width: 760px) 92vw, 470px" preload />
             </div>
             <span className="photo-seal" aria-hidden="true"><Icon name="heart" size={25} /></span>
           </figure>

@@ -1,4 +1,4 @@
-# Nña & Tylor’s wedding RSVP
+# Niña & Tylor’s wedding RSVP
 
 The invitation uses January 27, 2027 as the wedding date. The RSVP deadline is January 7, 2027, inclusive in Asia/Manila. Set the wedding date in `app/wedding.ts` once the couple confirms it. The deadline is calculated 20 days earlier. Change the motif under `:root` in `app/globals.css`.
 
